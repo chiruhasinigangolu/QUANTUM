@@ -1,0 +1,74 @@
+{
+    "file": {
+        "name": "sample-3s.mp3",
+        "type": "audio",
+        "mime_type": "audio/mpeg",
+        "size_bytes": 52079
+    },
+    "ingestion": {
+        "received_at": "2026-09-07T21:28:38.170Z"
+    },
+    "step_1_sha256": {
+        "algorithm": "SHA-256",
+        "hash": "0244590f2b4bcb62352b574e78bea940e8d89cfa69823b5208ef4c43e0abcb44"
+    },
+    "step_2_metadata": {
+        "file_type": "audio",
+        "file_size": 52079,
+        "metadata_status": "Basic metadata recorded"
+    },
+    "step_3_perceptual_hash": {
+        "algorithm": "Perceptual Hash",
+        "hash": "63d1d29c3388b5dc",
+        "status": "Generated"
+    },
+    "step_4_metadata_consistency": {
+        "status": "Consistent",
+        "warnings": []
+    },
+    "step_5_steganalysis": {
+        "status": "Completed",
+        "reason": "Document and non-image asset structure entropy analyzed.",
+        "findings": []
+    },
+    "step_6_ai_signature_check": {
+        "possible_ai_indicators": [],
+        "indicator_count": 0,
+        "status": "No known AI indicator found"
+    },
+    "step_7_digital_signature": {
+        "status": "Verified",
+        "valid": true,
+        "message": "Ed25519/ECDSA digital signature verified against author public key."
+    },
+    "step_8_cryptographic_timestamp": {
+        "timestamp": "2026-09-07T21:28:38.170Z",
+        "timestamp_hash": "79c290f8eff6d4d9aaf5af90a116d6542186aa55a9ccd8de18cce4ccd0d24cbdbaaff00e8a32ed2f50229872abd9d968032febfd788344e5b127bda2cc3fa9b4"
+    },
+    "step_9_merkle_dag": {
+        "created_at": "2026-09-07T21:28:38.170Z",
+        "file_hash": "0244590f2b4bcb62352b574e78bea940e8d89cfa69823b5208ef4c43e0abcb44",
+        "previous_hash": "f9007cd47cc13fb3cd467c8eadcc525b0152df2e7c47a5b7465e8e04523143b4",
+        "node_hash": "1338bfdaed6ab4c9bba405c2efbeffe15005380b0eaf36e033c733df7d9c0d2e"
+    },
+    "step_10_immutable_ledger": {
+        "record_hash": "abdffbc0d6eb962fcae0ca85fd6155a5ed53aa2b671d874ccac09ec0421e6d52",
+        "previous_record_hash": "2e2de0c867dce5b64b70f8b05c6a121e46964ff1385321db2b32e192ead659d1",
+        "status": "Stored"
+    },
+    "step_11_verification_report": {
+        "trust_score": {
+            "score": 100,
+            "level": "High Trust"
+        },
+        "ledger_status": {
+            "valid": true,
+            "records": 75
+        },
+        "overall_result": "File appears trustworthy"
+    },
+    "trust_score": {
+        "score": 100,
+        "level": "High Trust"
+    }
+}
