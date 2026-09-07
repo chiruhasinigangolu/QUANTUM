@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0a0f0d;
+    background-image: 
+      linear-gradient(rgba(34, 197, 94, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 197, 94, 0.035) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: center center;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Custom terminal scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #23332a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #344c3e;
+}
+
+/* Monospace headings & labels */
+.font-mono-ops {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.06em;
+}
+
+/* Glassmorphism / Terminal Cards */
+.ops-card {
+  background: rgba(19, 29, 24, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid #23332a;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ops-card:hover {
+  border-color: rgba(34, 197, 94, 0.35);
+  box-shadow: 0 0 20px -5px rgba(34, 197, 94, 0.15);
+}
+
+/* Subtle scanlines effect for security visual feel */
+.scanlines {
+  position: relative;
+}
+.scanlines::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.4;
+}
